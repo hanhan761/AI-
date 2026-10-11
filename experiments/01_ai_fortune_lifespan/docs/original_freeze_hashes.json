@@ -1,0 +1,23 @@
+{
+  "config/v3/rubric.json": "a5f454af69a53fadefa11dd15aee120e51155bb768b8f0dcab87237b8587a801",
+  "src/v3/report_template.html": "3ba3c822ce011fdcf821167d7d0e702c25d18e2128caedc1d00b84bb5bf4058c",
+  "tests/v3/verify.py": "8109886498228b67bcf245cdf3f41bb666df1800db6088fa91e7680fa1cde8f2",
+  "tests/v3/statistics_test.py": "b44d0ff266834fdbf63518e6d0a1ff9cee8f97b31602a9f737c8ef99e9d246de",
+  "config/v3/protocol.json": "23496106c3fd611423bace2e4b6236cef6de65ebfe3b9468785de61fb89fefc4",
+  "theory/v3/rules.json": "6160ab535204812c61d9b12223a1da1744dba80991353d95025253df9988dcda",
+  "data/v3/gold.private.json": "7edfb7caa9ea3f1aca93a84b10e42301e91a4afad8d1556f0c47a6f8e217a954",
+  "data/v3/charts.anonymous.json": "78cb669b0b85eb4ab66990e728db4f109c4a31134c8628708d6672b9369fcd50",
+  "data/v3/shuffle.private.json": "5704cdd02e630c0ba6b6a1e81d76ab6e72811e66d8e65636c63e186610089e00",
+  "data/v3/inventory.json": "5694312178e8a60ee95f796645e56709768ceafade05ed6a9e68ba4fa31cead9",
+  "runs/v3/tasks.json": "e71da5f2d7be034d73bad03869ae4c5c4687a513fc28c71ecce8659f21c26771",
+  "runs/v3/gate_tasks.json": "4e54297b8f6d94c5fe149bbcc47054980010e82658460310677844bc73a0bf6f",
+  "src/v3/analyze.py": "06134d4f1c73ed5711376614597571ddc85f5d9ffdd5c28f2e3de09a3804f158",
+  "src/v3/build_judges.py": "c9cd31a2addb21870e39d33a5c213bd1038daf6ba1a4f5a367b3616b0fb4d4dc",
+  "src/v3/driver.py": "1fb22bbd46c7f0613e1b330cd5ebfba07a187dca0959f5ccbcb9ec6794d3f175",
+  "src/v3/durable_queue.py": "8fb987d962bd4668cd9291ad0e60e98d3cb92ba25807c1de4fd63ffbc6c64252",
+  "src/v3/judge_run.py": "0b57df268d4ac561d921ff4646c988f2dbaafe378eafae77347512ea0b6cf5a7",
+  "src/v3/monitor.py": "905d45e123e66427e9a24a80b0b4761f8980f85369085bde8e9aeb21a6b747fd",
+  "src/v3/prompt.py": "2108b0be78941e428c513a9690d68eb7599732228d91497c64ce4bf0f31268ae",
+  "src/v3/research_stats.py": "56c0f8d9c4f05d465a0485e9a1a32de67645223a24c69ddc94639e68afb7e5ce",
+  "src/v3/run.py": "f8504836dd6acea6dcc3439c2e15c735dfc3dba85b56ad5b9c2aa19dc9f8a3b5"
+}

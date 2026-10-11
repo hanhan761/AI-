@@ -1,0 +1,140 @@
+{
+  "version": "v3-theory-aligned-population",
+  "created": "2026-10-06",
+  "models": [
+    "Doubao-pro-32k",
+    "qwen-max",
+    "qwen-plus",
+    "qwen-turbo",
+    "qwen-long",
+    "DeepSeek-V3-2",
+    "qwen3-max",
+    "qwen-plus-latest",
+    "qwen3-vl-plus",
+    "qwen3-coder-plus",
+    "doubao-seed-2.0-lite",
+    "Doubao-Seed-2.0-pro",
+    "qwen3.7-max",
+    "kimi-k3",
+    "qwen3.8-max",
+    "GLM-5.2",
+    "GLM-4.7",
+    "qwen3.6-flash"
+  ],
+  "model_families": {
+    "Doubao-pro-32k": "Doubao",
+    "GLM-4-Plus": "GLM",
+    "GLM-4-Air": "GLM",
+    "GLM-4-Long": "GLM",
+    "qwen-max": "Qwen",
+    "qwen-plus": "Qwen",
+    "qwen-turbo": "Qwen",
+    "qwen-long": "Qwen",
+    "moonshot-v1-8k": "Moonshot/Kimi",
+    "moonshot-v1-32k": "Moonshot/Kimi",
+    "moonshot-v1-128k": "Moonshot/Kimi",
+    "DeepSeek-V3-2": "DeepSeek",
+    "qwen3-max": "Qwen",
+    "qwen-plus-latest": "Qwen",
+    "qwen3-vl-plus": "Qwen",
+    "qwen3-coder-plus": "Qwen",
+    "doubao-seed-2.0-lite": "Doubao",
+    "Doubao-Seed-2.0-pro": "Doubao",
+    "qwen3.7-max": "Qwen",
+    "kimi-k3": "Moonshot/Kimi",
+    "qwen3.8-max": "Qwen",
+    "GLM-5.2": "GLM",
+    "GLM-4.7": "GLM",
+    "qwen3.6-flash": "Qwen"
+  },
+  "repeats": 3,
+  "arms": [
+    "true_chart",
+    "shuffled_chart"
+  ],
+  "primary_target": "ordinal_longevity_tendency",
+  "categories": [
+    "long",
+    "short",
+    "balanced",
+    "insufficient"
+  ],
+  "primary_population": "AA; A sensitivity; full dated death, public figure, Gregorian birth >=1600, no alternative birth record, valid UTC Julian day",
+  "primary_estimand": "first-attempt valid, non-identified; ordinal long=1, short=-1, balanced=0; insufficient missing, never zero; person mean over repeated calls; age-order concordance within sex and 50-year birth cohort; paired true versus shuffled",
+  "controls": "fixed chart derangement within sex and 50-year birth cohort; uniform/constant score concordance .5; calibration-only cohort/sex mean lifespan; no label leakage",
+  "repeat_statistics": "Within-person SD; stratified person-cluster influence bootstrap 2000 percentile 95% CI for pairwise concordance and paired difference; explicit linearization approximation; effective N counts distinct people, not answers",
+  "multiple_testing": "One-sided within-cohort person-level label permutation 2000, +1 correction; Holm correction over 18 declared model associations; effect and CIs primary, no cherry-picked winners",
+  "source_limits": [
+    "C-initial convenience cohort is not population representative",
+    "AA is source publisher rating, not independent certificate verification",
+    "event completeness and death-only survivor selection bias",
+    "anonymous charts still may be memorized",
+    "ancient texts do not specify modern age bins or probabilities; these are declared extrapolations",
+    "model versions in one family are correlated, not 24 independent confirmations"
+  ],
+  "retry": {
+    "max_attempts": 2,
+    "replay_ambiguous": false,
+    "invalid_outputs": "preserve original, frozen same-prompt retry; primary first attempt only",
+    "format_repair": false
+  },
+  "workers": 20,
+  "wall_budget_seconds": 604800,
+  "qualification_gate": "first 3 evaluation people, both arms, repetition 1; exact task IDs retained; schema complete >=2 of 6, no accuracy gate",
+  "plan": "full eligible held-out cohort, no downsampling based on model results",
+  "requested_models": [
+    "Doubao-pro-32k",
+    "GLM-4-Plus",
+    "GLM-4-Air",
+    "GLM-4-Long",
+    "qwen-max",
+    "qwen-plus",
+    "qwen-turbo",
+    "qwen-long",
+    "moonshot-v1-8k",
+    "moonshot-v1-32k",
+    "moonshot-v1-128k",
+    "DeepSeek-V3-2",
+    "qwen3-max",
+    "qwen-plus-latest",
+    "qwen3-vl-plus",
+    "qwen3-coder-plus",
+    "doubao-seed-2.0-lite",
+    "Doubao-Seed-2.0-pro",
+    "qwen3.7-max",
+    "kimi-k3",
+    "qwen3.8-max",
+    "GLM-5.2",
+    "GLM-4.7",
+    "qwen3.6-flash"
+  ],
+  "unavailable_models": [
+    "GLM-4-Plus",
+    "GLM-4-Air",
+    "GLM-4-Long",
+    "moonshot-v1-8k",
+    "moonshot-v1-32k",
+    "moonshot-v1-128k"
+  ],
+  "unavailable_reason": "v2 actual complete calls repeatedly reached Chat HTTP500; no silent fallback, no new requests for these routes",
+  "operation": "Ancient qualitative life tendency is assessed against continuous observed lifespan ordering; no arbitrary age threshold or death-probability formula attributed to classics.",
+  "sensitivity": {
+    "time_boundary": "exclude charts within 5 min of a two-hour branch boundary",
+    "external_death_codes": [
+      "Death by Accident",
+      "Death by Homicide",
+      "Death by Execution",
+      "Death by Suicide",
+      "Death by War"
+    ],
+    "external_cause_limit": "Only explicitly coded causes excluded; unspecified is not certified natural death"
+  },
+  "judge": {
+    "models": [
+      "qwen3.8-max",
+      "DeepSeek-V3-2"
+    ],
+    "sample_people": 32,
+    "prespecified_order": "SHA256(review:personID), AA evaluation only; all 3 first-attempt true-chart answers; structural audit, no outcome labels"
+  }
+}

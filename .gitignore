@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.env*
+*.pem
+*.key
+*.sqlite*
+*.db
+*.jsonl
+**/data/v3/
+**/runs/
+**/reports/
+**/private/
+**/.deps/
+**/data/generated/

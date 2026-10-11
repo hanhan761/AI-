@@ -1,0 +1,72 @@
+{
+  "downloaded_records": 6036,
+  "source_version": {
+    "export_format": "260911",
+    "filename": "c_sample_260919_1519.xml",
+    "update_since": "Fri Sep 18 09:39:01 2026 UTC"
+  },
+  "ratings_all": {
+    "B": 233,
+    "C": 426,
+    "AA": 3825,
+    "A": 1161,
+    "DD": 52,
+    "X": 338,
+    "AX": 1
+  },
+  "eligible_people": 2173,
+  "eligible_by_rating": {
+    "AA": 1914,
+    "A": 259
+  },
+  "calibration_people": 461,
+  "evaluation_people": 1712,
+  "evaluation_by_rating": {
+    "AA": 1501,
+    "A": 211
+  },
+  "event_records_retained": 2949,
+  "event_records_reviewed": 6695,
+  "exclusions": {
+    "rating_not_A_AA": 828,
+    "no_full_death_date": 2551,
+    "non_public_person": 436,
+    "birth_calendar_or_date": 30,
+    "alternative_birth": 11,
+    "conflicting_death_dates": 1,
+    "unsupported_gender": 4,
+    "implausible_death_age": 2
+  },
+  "models_requested": 24,
+  "model_families": {
+    "Doubao": 3,
+    "GLM": 5,
+    "Qwen": 11,
+    "Moonshot/Kimi": 4,
+    "DeepSeek": 1
+  },
+  "planned_calls": 184896,
+  "repeat": 3,
+  "arms": 2,
+  "seasonal_rule_sections": 40,
+  "time_boundary_people": 313,
+  "data_usage": "Local astrological research only; do not distribute raw research_data, biographies, source notes or large record subsets; public report aggregate/anonymized statistics only",
+  "source_urls": [
+    "https://www.astro.com/adbexport/00_readme.htm",
+    "https://www.astro.com/adbexport/c_sample.zip",
+    "https://www.astro.com/astro-databank/Help:XML_export_format"
+  ],
+  "retrieved_utc": "2026-10-06T10:57:00.372500+00:00",
+  "archive_sha256": "da4a0638434dad80f1ff028e3ac898c4a9e3d2f7bb4a665d2086d5c3770844e1",
+  "protocol": "v3",
+  "models_scheduled": 18,
+  "unavailable_models": [
+    "GLM-4-Plus",
+    "GLM-4-Air",
+    "GLM-4-Long",
+    "moonshot-v1-8k",
+    "moonshot-v1-32k",
+    "moonshot-v1-128k"
+  ],
+  "primary_task": "ordinal_longevity_tendency"
+}
